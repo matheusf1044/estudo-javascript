@@ -1,7 +1,15 @@
-let pedaco = 0
-while (pedaco < 10){
-    console.log(pedaco)
+function grabDoll(dolls){
+  var bag=[];
+  for(let i = 0; i < dolls.length; i++){
+    if(dolls[i] == "Hello Kitty" || dolls[i] == "Barbie doll"){
+      bag.push(dolls[i])
+      if(bag.length == 3){
+        break
+      }
+    }else {
+      continue
+    }
+  }
   
-    pedaco++
+  return bag;
 }
-  
